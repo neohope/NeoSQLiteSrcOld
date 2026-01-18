@@ -1,30 +1,13 @@
 /*
-** Copyright (c) 1999, 2000 D. Richard Hipp
-**
-** This program is free software; you can redistribute it and/or
-** modify it under the terms of the GNU General Public
-** License as published by the Free Software Foundation; either
-** version 2 of the License, or (at your option) any later version.
-**
-** This program is distributed in the hope that it will be useful,
-** but WITHOUT ANY WARRANTY; without even the implied warranty of
-** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-** General Public License for more details.
-** 
-** You should have received a copy of the GNU General Public
-** License along with this library; if not, write to the
-** Free Software Foundation, Inc., 59 Temple Place - Suite 330,
-** Boston, MA  02111-1307, USA.
-**
-** Author contact information:
-**   drh@hwaci.com
-**   http://www.hwaci.com/drh/
-**
-*************************************************************************
 ** This file contains routines used for analyzing expressions and
 ** for generating VDBE code that evaluates expressions.
 **
 ** $Id: expr.c,v 1.18 2000/06/21 13:59:11 drh Exp $
+*/
+/*
+** 中文说明:
+** 本文件负责对表达式语法树进行分析与重写，并生成在 VDBE 中求值的指令，
+** 包括常量折叠、IN 子句处理以及各种运算符与函数调用的编码。
 */
 #include "sqliteInt.h"
 

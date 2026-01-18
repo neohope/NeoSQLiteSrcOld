@@ -1,26 +1,4 @@
 /*
-** Copyright (c) 1999, 2000 D. Richard Hipp
-**
-** This program is free software; you can redistribute it and/or
-** modify it under the terms of the GNU General Public
-** License as published by the Free Software Foundation; either
-** version 2 of the License, or (at your option) any later version.
-**
-** This program is distributed in the hope that it will be useful,
-** but WITHOUT ANY WARRANTY; without even the implied warranty of
-** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-** General Public License for more details.
-** 
-** You should have received a copy of the GNU General Public
-** License along with this library; if not, write to the
-** Free Software Foundation, Inc., 59 Temple Place - Suite 330,
-** Boston, MA  02111-1307, USA.
-**
-** Author contact information:
-**   drh@hwaci.com
-**   http://www.hwaci.com/drh/
-**
-*************************************************************************
 ** The code in this file implements the Virtual Database Engine (VDBE)
 **
 ** The SQL parser generates a program which is then executed by
@@ -42,6 +20,11 @@
 ** a program instruction by instruction.
 **
 ** $Id: vdbe.c,v 1.38 2000/08/02 12:26:29 drh Exp $
+*/
+/*
+** 中文说明:
+** 本文件实现虚拟数据库引擎 VDBE，它负责执行由 SQL 解析器生成的
+** “指令序列”（类似汇编程序），通过操作栈和游标完成 SQL 的具体工作。
 */
 #include "sqliteInt.h"
 #include <unistd.h>

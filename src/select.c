@@ -1,30 +1,13 @@
 /*
-** Copyright (c) 1999, 2000 D. Richard Hipp
-**
-** This program is free software; you can redistribute it and/or
-** modify it under the terms of the GNU General Public
-** License as published by the Free Software Foundation; either
-** version 2 of the License, or (at your option) any later version.
-**
-** This program is distributed in the hope that it will be useful,
-** but WITHOUT ANY WARRANTY; without even the implied warranty of
-** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-** General Public License for more details.
-** 
-** You should have received a copy of the GNU General Public
-** License along with this library; if not, write to the
-** Free Software Foundation, Inc., 59 Temple Place - Suite 330,
-** Boston, MA  02111-1307, USA.
-**
-** Author contact information:
-**   drh@hwaci.com
-**   http://www.hwaci.com/drh/
-**
-*************************************************************************
 ** This file contains C code routines that are called by the parser
 ** to handle SELECT statements.
 **
 ** $Id: select.c,v 1.26 2000/07/29 13:06:59 drh Exp $
+*/
+/*
+** 中文说明:
+** 本文件在解析器识别到 SELECT 语句时被调用，负责构建 Select 结构、
+** 处理聚合与分组、去重、排序以及复合查询，并生成相应的 VDBE 程序。
 */
 #include "sqliteInt.h"
 

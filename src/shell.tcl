@@ -10,27 +10,6 @@
 # a prompt string, and a title to get a new top-level window that allows 
 # the user to enter tcl commands.  This is mainly useful for testing and
 # debugging.
-#
-# Copyright (C) 1998, 1999 D. Richard Hipp
-#
-# This library is free software; you can redistribute it and/or
-# modify it under the terms of the GNU Library General Public
-# License as published by the Free Software Foundation; either
-# version 2 of the License, or (at your option) any later version.
-#
-# This library is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-# Library General Public License for more details.
-# 
-# You should have received a copy of the GNU Library General Public
-# License along with this library; if not, write to the
-# Free Software Foundation, Inc., 59 Temple Place - Suite 330,
-# Boston, MA  02111-1307, USA.
-#
-# Author contact information:
-#   drh@acm.org
-#   http://www.hwaci.com/drh/
 
 # Create a console widget named $w.  The prompt string is $prompt.
 # The title at the top of the window is $title

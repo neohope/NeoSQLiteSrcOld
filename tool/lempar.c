@@ -22,6 +22,11 @@
 **
 ** Modified 1997 to make it suitable for use with makeheaders.
 */
+/*
+** 中文说明:
+** 本文件是 Lemon 解析器生成器的驱动模板，SQLite 的 SQL 语法解析器
+** 源码由该模板与 parse.y 描述文件自动生成。
+*/
 /* First off, code is include which follows the "include" declaration
 ** in the input file. */
 #include <stdio.h>

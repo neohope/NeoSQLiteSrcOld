@@ -1,26 +1,4 @@
 /*
-** Copyright (c) 1999, 2000 D. Richard Hipp
-**
-** This program is free software; you can redistribute it and/or
-** modify it under the terms of the GNU General Public
-** License as published by the Free Software Foundation; either
-** version 2 of the License, or (at your option) any later version.
-**
-** This program is distributed in the hope that it will be useful,
-** but WITHOUT ANY WARRANTY; without even the implied warranty of
-** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-** General Public License for more details.
-** 
-** You should have received a copy of the GNU General Public
-** License along with this library; if not, write to the
-** Free Software Foundation, Inc., 59 Temple Place - Suite 330,
-** Boston, MA  02111-1307, USA.
-**
-** Author contact information:
-**   drh@hwaci.com
-**   http://www.hwaci.com/drh/
-**
-*************************************************************************
 ** This file contains code to implement the database backend (DBBE)
 ** for sqlite.  The database backend is the interface between
 ** sqlite and the code that does the actually reading and writing
@@ -31,6 +9,12 @@
 ** as NDBM, SDBM, or BerkeleyDB.
 **
 ** $Id: dbbe.c,v 1.19 2000/08/17 09:50:00 drh Exp $
+*/
+/*
+** 中文说明:
+** 本文件实现 SQLite 的数据库后端接口 DBBE，当前使用 GDBM 作为底层
+** 存储，引入对磁盘文件的打开、关闭、遍历与随机访问等操作，并对上层
+** 屏蔽具体的键值存储实现。
 */
 #include "sqliteInt.h"
 #include <gdbm.h>

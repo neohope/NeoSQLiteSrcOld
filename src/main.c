@@ -1,32 +1,15 @@
 /*
-** Copyright (c) 1999, 2000 D. Richard Hipp
-**
-** This program is free software; you can redistribute it and/or
-** modify it under the terms of the GNU General Public
-** License as published by the Free Software Foundation; either
-** version 2 of the License, or (at your option) any later version.
-**
-** This program is distributed in the hope that it will be useful,
-** but WITHOUT ANY WARRANTY; without even the implied warranty of
-** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-** General Public License for more details.
-** 
-** You should have received a copy of the GNU General Public
-** License along with this library; if not, write to the
-** Free Software Foundation, Inc., 59 Temple Place - Suite 330,
-** Boston, MA  02111-1307, USA.
-**
-** Author contact information:
-**   drh@hwaci.com
-**   http://www.hwaci.com/drh/
-**
-*************************************************************************
 ** Main file for the SQLite library.  The routines in this file
 ** implement the programmer interface to the library.  Routines in
 ** other files are for internal use by SQLite and should not be
 ** accessed by users of the library.
 **
 ** $Id: main.c,v 1.16 2000/08/02 13:47:42 drh Exp $
+*/
+/*
+** 中文说明:
+** 本文件实现 SQLite 对外暴露的编程接口，负责打开/关闭数据库、
+** 执行 SQL 语句以及初始化/清理内部数据结构，是整个库的入口。
 */
 #include "sqliteInt.h"
 
